@@ -1,10 +1,14 @@
 import React from 'react'
 import styles from "../Styles/styles.module.css"
 
-export default function Square({ value, onSquareClick }) {
+export default function Square({ value}) {
+  const handleClick = () => {
+    console.log({value}, "clicked!")
+  }
+
   return (
-    <div className={styles.square} onClick={onSquareClick}>
+    <button className={styles.square} onClick={handleClick}>
       {value}
-    </div>
+    </button>
   )
 }

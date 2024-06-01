@@ -1,9 +1,11 @@
 .board {
     display: grid;
+    gap: 5px;
 }
 
 .boardRow {
     display: flex;
+    gap: 5px;
 }
 
 .square {
